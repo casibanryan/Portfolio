@@ -2,17 +2,17 @@
 
 const About = () => (
     <>
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
+        <section className="resume-section" id="about">
+            <div className="resume-section-content">
+                <h1 className="mb-0">
                     Restituto
-                    <span class="text-primary">Ochea</span>
+                    <span className="text-primary">Ochea</span>
                 </h1>
-                <div class="subheading mb-5">
+                <div className="subheading mb-5">
                     6015 Basak street Lapu-lapu City· Cebu Philippines · (032) 887-5584 ·
                     <a href="mailto:restyochea.com">restyochea@gmail.com</a>
                 </div>
-                <p class="lead mb-5">
+                <p className="lead mb-5">
                     I've been building websites and learning code for almost 5 years and am experienced in WordPress,
                     HTML5, CSS3, PHP, Python3,
                     JavaScript, JQuery, Bootstrap 5, React, and laravel. I work on a variety of
@@ -26,19 +26,19 @@ const About = () => (
                     I am a programmer at heart and create features that are best suited for the job at hand.
 
                 </p>
-                <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/restituto-ochea-a873b3236/"
-                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/casibanryan" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://twitter.com/ochea_restituto" target="_blank"><i
-                        class="fab fa-twitter"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/TitsuKe" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
+                <div className="social-icons">
+                    <a className="social-icon" href="https://www.linkedin.com/in/restituto-ochea-a873b3236/"
+                        target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                    <a className="social-icon" href="https://github.com/casibanryan" target="_blank"><i
+                        className="fab fa-github"></i></a>
+                    <a className="social-icon" href="https://twitter.com/ochea_restituto" target="_blank"><i
+                        className="fab fa-twitter"></i></a>
+                    <a className="social-icon" href="https://www.facebook.com/TitsuKe" target="_blank"><i
+                        className="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
+        <hr className="m-0" />
     </>
 )
 
