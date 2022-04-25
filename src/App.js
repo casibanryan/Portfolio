@@ -13,15 +13,15 @@ import React, { useEffect } from 'react';
 
 function App() {
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "./js/scripts.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = "./js/scripts.js";
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   }
+  // }, []);
 
 
   return (
@@ -40,6 +40,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
           type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       </Helmet>
     </div>
   );
