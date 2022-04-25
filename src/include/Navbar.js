@@ -1,6 +1,4 @@
-import './css/styles.css';
-
-
+import '../css/styles.css';
 
 const Navbar = () => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
