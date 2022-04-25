@@ -212,8 +212,7 @@
 .service-wrapper:hover .big-icon {
     z-index: -1;
     opacity: 0.1;
-    font-size: 180px;
-    opacity: 0;
+    font-size: 380px;
 }
 
 .uim-svg {
