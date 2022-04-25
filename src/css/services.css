@@ -199,7 +199,7 @@
     font-size: 20px;
 }
 
-#services>div>div>div:nth-child(1)>div>div.content.mt-4>p:hover {
+#services p:hover {
     color: white !important;
 }
 
