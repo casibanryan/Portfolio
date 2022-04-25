@@ -219,7 +219,7 @@
     display: inline-block;
     height: 1em;
     vertical-align: -0.125em;
-    font-size: 38;
+    font-size: 38px;
     fill: var(--uim-color, currentColor);
 }
 
