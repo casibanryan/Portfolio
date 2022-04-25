@@ -173,6 +173,7 @@
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-weight: 500;
+    color: #FD2155;
 }
 
 .service-wrapper .big-icon {
@@ -201,7 +202,7 @@
 .service-wrapper:hover .big-icon {
     z-index: -1;
     opacity: 0.1;
-    font-size: 160px;
+    font-size: 180px;
 }
 
 .uim-svg {
