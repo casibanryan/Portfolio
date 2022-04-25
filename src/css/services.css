@@ -212,14 +212,14 @@
 .service-wrapper:hover .big-icon {
     z-index: -1;
     opacity: 0.1;
-    font-size: 380px;
+    font-size: 180px;
 }
 
 .uim-svg {
     display: inline-block;
     height: 1em;
     vertical-align: -0.125em;
-    font-size: 48;
+    font-size: 38;
     fill: var(--uim-color, currentColor);
 }
 
