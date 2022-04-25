@@ -164,7 +164,7 @@
 .service-wrapper .icon {
     width: 60px;
     height: 60px;
-    line-height: 20px;
+    line-height: 10px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -208,6 +208,11 @@
     display: inline-block;
     height: 1em;
     vertical-align: -0.125em;
-    font-size: 5rem;
+    font-size: 3rem;
     fill: var(--uim-color, currentColor);
+}
+
+.bg-services {
+    --bs-bg-opacity: 1;
+    background-color: rgba(#08FDD8, var(--bs-bg-opacity)) !important;
 }
