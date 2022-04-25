@@ -167,7 +167,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
                                         d="M12,22a.99974.99974,0,0,1-1-1V3a1,1,0,0,1,2,0V21A.99974.99974,0,0,1,12,22Z">
@@ -213,7 +213,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-primary"
                                         d="M12,6a.99974.99974,0,0,1,1,1v4.42249l2.09766,1.2113a1.00016,1.00016,0,0,1-1,1.73242l-2.59766-1.5A1.00455,1.00455,0,0,1,11,12V7A.99974.99974,0,0,1,12,6Z">
