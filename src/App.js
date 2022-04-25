@@ -4,7 +4,9 @@ import Navbar from './include/Navbar';
 
 function App() {
   return (
-    <Navbar />
+    <div id="page-top">
+      <Navbar />
+    </div>
   );
 }
 
