@@ -217,11 +217,12 @@
 
 .uim-svg {
     display: inline-block;
-    height: 1em;
+    height: 1rem;
     vertical-align: -0.125em;
     font-size: inherit;
     fill: var(--uim-color, currentColor);
 }
+
 
 .bg-services {
     --bs-bg-opacity: 1;
