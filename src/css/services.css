@@ -173,11 +173,12 @@
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-weight: 500;
-    color: #FD2155;
+    color: #08FDD8;
 }
 
 .service-wrapper .content .title:hover {
-    color: #08FDD8;
+
+    color: #FD2155;
 }
 
 .service-wrapper .big-icon {
@@ -199,7 +200,7 @@
     font-size: 20px;
 }
 
-#services p:hover {
+#services :hover {
     color: white !important;
 }
 
@@ -211,7 +212,7 @@
 .service-wrapper:hover .big-icon {
     z-index: -1;
     opacity: 0.1;
-    font-size: 180px;
+    font-size: 280px;
 }
 
 .uim-svg {
