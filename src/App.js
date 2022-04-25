@@ -1,45 +1,22 @@
 import Navbar from './include/Navbar';
 import About from './include/About';
 import Experience from './include/Experience';
+import Education from './include/Education';
 import { Helmet } from 'react-helmet';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 
 
 
 function App() {
 
-  useEffect(() => {
-    window.addEventListener('DOMContentLoaded', event => {
-      const sideNav = document.body.querySelector('#sideNav');
-      if (sideNav) {
-        new bootStrap.ScrollSpy(document.body, {
-          target: '#sideNav',
-          offset: 74,
-        });
-      };
-
-      const navbarToggler = document.body.querySelector('.navbar-toggler');
-      const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-      );
-      responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-          if (window.getComputedStyle(navbarToggler).display !== 'none') {
-            navbarToggler.click();
-          }
-        });
-      });
-
-    });
-
-  }, [])
-
   return (
     <div id="page-top" className="container-fluid p-0">
       <Navbar />
       <About />
       <Experience />
+      <Education />
+      <Skills />
 
       <Helmet>
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -48,7 +25,6 @@ function App() {
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
       </Helmet>
     </div>
-
   );
 }
 
