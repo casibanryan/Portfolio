@@ -14,11 +14,17 @@ import { appendScript } from './js/appendScript';
 function App() {
 
 
+
   useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "./js/scripts.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
 
-    appendScript("./js/scripts.js");
-
-  }, [])
 
   return (
     <div id="page-top" className="container-fluid p-0">
