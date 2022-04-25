@@ -7,7 +7,7 @@ import Interest from './include/Interest';
 import Portfolio from './include/Portfolio';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-import appendScript from './js/appendScript';
+import { appendScript } from './js/appendScript';
 
 
 
