@@ -173,7 +173,7 @@
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-weight: 500;
-    color: #08FDD8;
+    color: white !important;
 }
 
 .service-wrapper .content .title:hover {
