@@ -3,7 +3,7 @@ import About from './include/About';
 import Experience from './include/Experience';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-import { appendScript } from 'js/appendScript'
+import { appendScript } from './js/appendScript';
 
 
 
