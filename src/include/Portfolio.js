@@ -1,3 +1,6 @@
+import artManagemnt from '../assets/img/art-management.png';
+import lafang from '../assets/img/lafang.png';
+import onlineVoting from '../assets/img/online-voting.png';
 
 
 const Portfolio = () => (
@@ -15,7 +18,7 @@ const Portfolio = () => (
                                             className="btn btn-primary"><i className="fa-brands fa-github"></i> read
                                             more</a>
                                     </div>
-                                    <img className="port-image" src="assets/img/art-management.png">
+                                    <img className="port-image" src={artManagemnt} />
                                 </div>
                                 <div className="col-sm-8 col-md-9 col-lg-9">
                                     <h3>
@@ -61,7 +64,7 @@ const Portfolio = () => (
                                             className="btn btn-primary"><i className="fa-brands fa-github"></i> read
                                             more</a>
                                     </div>
-                                    <img className="port-image" src="assets/img/online-voting.png">
+                                    <img className="port-image" src={onlineVoting} />
                                 </div>
                                 <div className="col-sm-8 col-md-9 col-lg-9">
                                     <h3>
@@ -108,7 +111,7 @@ const Portfolio = () => (
                                             className="btn btn-primary"><i className="fa-brands fa-github"></i> read
                                             more</a>
                                     </div>
-                                    <img className="port-image" src="assets/img/lafang.png">
+                                    <img className="port-image" src={lafang} />
                                 </div>
                                 <div className="col-sm-8 col-md-9 col-lg-9">
                                     <h3>
