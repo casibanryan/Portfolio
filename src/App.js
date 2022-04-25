@@ -6,12 +6,19 @@ import Skills from './include/Skills';
 import Interest from './include/Interest';
 import Portfolio from './include/Portfolio';
 import { Helmet } from 'react-helmet';
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import appendScript from './js/appendScript';
 
 
 
 function App() {
+
+
+  useEffect(() => {
+
+    appendScript("./js/scripts.js");
+
+  }, [])
 
   return (
     <div id="page-top" className="container-fluid p-0">
