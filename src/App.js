@@ -11,7 +11,7 @@ import { appendScript } from 'js/appendScript'
 function App() {
 
   useEffect(() => {
-    appendScript('js/scripts.js');
+    appendScript('./js/scripts.js');
   }, [])
 
   return (
