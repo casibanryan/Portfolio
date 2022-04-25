@@ -176,6 +176,10 @@
     color: #FD2155;
 }
 
+.service-wrapper .content .title:hover {
+    color: #08FDD8;
+}
+
 .service-wrapper .big-icon {
     position: absolute;
     right: 0;
@@ -192,8 +196,11 @@
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
     border-color: transparent !important;
-    color: #ffffff !important;
     font-size: 20px;
+}
+
+.service-wrapper p:hover {
+    color: #ffffff !important;
 }
 
 .service-wrapper:hover .icon {
