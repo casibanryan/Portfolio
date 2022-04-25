@@ -9,7 +9,7 @@ const Services = () => (
                 <h2 className="mb-5">Services</h2>
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
@@ -21,7 +21,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Fully Responsive</h5>
-                                <p className="text-muted mt-3 mb-0">
+                                <p className="mt-3 mb-0">
                                     Responsive design can help you solve a lot of problems for your website. It will make your
                                     site mobile-friendly, improve
                                     the way it looks on devices with both large and small screens, and increase the amount of
@@ -44,7 +44,7 @@ const Services = () => (
 
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
@@ -59,7 +59,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Fresh Layouts</h5>
-                                <p className="text-muted mt-3 mb-2">Online web designs are important because they help create
+                                <p className=" mt-3 mb-2">Online web designs are important because they help create
                                     consistency across your page. You need to have the same fonts,
                                     styles, and layouts across every page on your website. If you have a different design on
                                     every page, this will make your
@@ -82,7 +82,7 @@ const Services = () => (
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
@@ -99,7 +99,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Search Engine Optimization</h5>
-                                <p className="text-muted mt-3 mb-0">SEO is not only about search engines but good SEO practices
+                                <p className=" mt-3 mb-0">SEO is not only about search engines but good SEO practices
                                     improve the user experience and usability of a website.
                                     Users trust search engines and having a presence in the top positions for the keywords the
                                     user is searching, increases
@@ -125,7 +125,7 @@ const Services = () => (
 
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
@@ -140,7 +140,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Modern Workflow</h5>
-                                <p className="text-muted mt-3 mb-0">Creata a workflow that helps you map out the timeframes of each
+                                <p className=" mt-3 mb-0">Creata a workflow that helps you map out the timeframes of each
                                     task and
                                     gives a broad overview of all of the processes involved.
                                     This service of mine will able to create an accurate project timeline for both your clients
@@ -165,7 +165,7 @@ const Services = () => (
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
@@ -183,7 +183,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Web Scrapping</h5>
-                                <p className="text-muted mt-3 mb-0">
+                                <p className=" mt-3 mb-0">
                                     Are you looking for an advanced web scraping service provider to cover up basic to complex
                                     data requirements or do you
                                     need a trusted professional to line up unique web content as per your business requirements
@@ -211,7 +211,7 @@ const Services = () => (
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div className="card service-wrapper rounded border-0 shadow p-4">
+                        <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
@@ -225,7 +225,7 @@ const Services = () => (
                             </div>
                             <div className="content mt-4">
                                 <h5 className="title">Support 24/7</h5>
-                                <p className="text-muted mt-3 mb-0">Are you looking for friendly code buddy?, if yes contact me I'm
+                                <p className=" mt-3 mb-0">Are you looking for friendly code buddy?, if yes contact me I'm
                                     happy to serve you also helping other to solve with thier bugs or problems is my name
                                     calling, Feel free to contact me.
                                 </p>

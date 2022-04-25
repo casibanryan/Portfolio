@@ -3,6 +3,18 @@
     transition: all 0.5s ease;
 }
 
+.card-customize {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #020202 !important;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
 .service-container .icon {
     margin-top: 5%;
     font-size: 38px;
@@ -152,7 +164,7 @@
 .service-wrapper .icon {
     width: 60px;
     height: 60px;
-    line-height: 45px;
+    line-height: 20px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -196,6 +208,6 @@
     display: inline-block;
     height: 1em;
     vertical-align: -0.125em;
-    font-size: inherit;
+    font-size: 5rem;
     fill: var(--uim-color, currentColor);
 }
