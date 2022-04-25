@@ -10,7 +10,7 @@ const Services = () => (
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <rect width="20" height="15" x="2" y="3" className="uim-tertiary" rx="3"></rect>
@@ -45,7 +45,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
                                     <path className="uim-quaternary"
@@ -83,7 +83,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -126,7 +126,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-tertiary"
@@ -166,7 +166,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -212,7 +212,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-services">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-primary"
