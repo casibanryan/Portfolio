@@ -1,3 +1,4 @@
+import '../css/styles.css';
 
 const Experience = () => (
     <>

@@ -1,4 +1,4 @@
-
+import '../css/styles.css';
 
 const About = () => (
     <>
