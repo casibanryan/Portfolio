@@ -1,18 +1,16 @@
 import '../css/services.css';
-import { Helmet } from 'react-helmet';
+
 
 const Services = () => (
 
-
     <>
-
         <section className="resume-section" id="services">
             <div className="resume-section-content">
                 <h2 className="mb-5">Services</h2>
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <rect width="20" height="15" x="2" y="3" className="uim-tertiary" rx="3"></rect>
@@ -32,7 +30,7 @@ const Services = () => (
                                 </p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <rect width="20" height="15" x="2" y="3" className="uim-tertiary" rx="3"></rect>
@@ -47,7 +45,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
                                     <path className="uim-quaternary"
@@ -68,7 +66,7 @@ const Services = () => (
                                     site look unprofessional.</p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
                                     <path className="uim-quaternary"
@@ -85,7 +83,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -108,7 +106,7 @@ const Services = () => (
                                     the website's trust.</p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -128,7 +126,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-tertiary"
@@ -151,7 +149,7 @@ const Services = () => (
                                     improved communication and decision-making </p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-tertiary"
@@ -168,7 +166,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -194,7 +192,7 @@ const Services = () => (
                                 </p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
@@ -214,7 +212,7 @@ const Services = () => (
 
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card service-wrapper rounded border-0 shadow p-4">
-                            <div className="icon text-center text-custom h1 shadow rounded bg-white">
+                            <div className="icon text-center text-primary h1 shadow rounded bg-white">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-primary"
@@ -233,7 +231,7 @@ const Services = () => (
                                 </p>
 
                             </div>
-                            <div className="big-icon h1 text-custom">
+                            <div className="big-icon h1 text-primary">
                                 <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-primary"
