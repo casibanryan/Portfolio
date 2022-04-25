@@ -1,5 +1,3 @@
-import '../css/styles.css';
-
 const Experience = () => (
     <>
         <section className="resume-section" id="experience">

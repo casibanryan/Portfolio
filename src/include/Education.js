@@ -1,7 +1,4 @@
 
-import '../css/styles.css';
-
-
 const Education = () => (
 
     <>

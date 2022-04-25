@@ -1,5 +1,4 @@
 
-
 const Skills = () => (
     <>
         <section className="resume-section" id="skills">
