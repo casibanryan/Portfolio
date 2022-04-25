@@ -5,6 +5,7 @@ import Education from './include/Education';
 import Skills from './include/Skills';
 import Interest from './include/Interest';
 import Portfolio from './include/Portfolio';
+import Services from './include/Services';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
 
@@ -27,6 +28,7 @@ function App() {
     <div id="page-top" className="container-fluid p-0">
       <Navbar />
       <About />
+      <Services />
       <Experience />
       <Education />
       <Skills />
