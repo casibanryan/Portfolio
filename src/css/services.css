@@ -177,7 +177,6 @@
 }
 
 .service-wrapper .content .title:hover {
-
     color: #FD2155;
 }
 
@@ -220,6 +219,14 @@
     height: 1rem;
     vertical-align: -0.125em;
     font-size: inherit;
+    fill: var(--uim-color, currentColor);
+}
+
+.header-uim-svg {
+    display: inline-block;
+    height: 1rem;
+    vertical-align: -0.125em;
+    font-size: 38px;
     fill: var(--uim-color, currentColor);
 }
 

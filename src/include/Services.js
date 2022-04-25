@@ -11,7 +11,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <rect width="20" height="15" x="2" y="3" className="uim-tertiary" rx="3"></rect>
                                     <path className="uim-primary"
@@ -46,7 +46,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
                                     <path className="uim-quaternary"
                                         d="M15,2c-3.3772,0.00142-6.27155,2.41462-6.88025,5.73651c2.90693-1.59074,6.553-0.52375,8.14374,2.38317c0.98206,1.79462,0.98206,3.96594,0,5.76057c3.8013-0.69634,6.31837-4.3424,5.62202-8.14369C21.27662,4.41261,18.37925,1.99872,15,2z">
@@ -84,7 +84,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-quaternary"
                                         d="M6,23H2a.99974.99974,0,0,1-1-1V16a.99974.99974,0,0,1,1-1H6a.99974.99974,0,0,1,1,1v6A.99974.99974,0,0,1,6,23Z">
@@ -127,7 +127,7 @@ const Services = () => (
                     <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div className="card-customize service-wrapper rounded border-0 shadow p-4">
                             <div className="icon text-center text-primary h1 shadow rounded bg-services">
-                                <span className="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                <span className="header-uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     width="1em">
                                     <path className="uim-tertiary"
                                         d="M20 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.02883 1.02883 0 0 1 19.29 9.29a1.04667 1.04667 0 0 1 1.41992 0 1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 20 11zM19 6.5a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 19 6.5zM20 4a.98979.98979 0 0 1-.91992-1.37988A1.02883 1.02883 0 0 1 19.29 2.29a1.04669 1.04669 0 0 1 1.41992 0 1.02883 1.02883 0 0 1 .21.33008A.98919.98919 0 0 1 20.71 3.71a1.16044 1.16044 0 0 1-.33008.21A.9994.9994 0 0 1 20 4zM7.03027 6.24023a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 8 7H8A.99122.99122 0 0 1 7.03027 6.24023zm4-1a.99364.99364 0 0 1 .7295-1.21h0a.9907.9907 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 12 6h0A1.00294 1.00294 0 0 1 11.03027 5.24023zm4-1a.99816.99816 0 0 1 .7295-1.21h0a1.00272 1.00272 0 0 1 1.21.7295h0a.99891.99891 0 0 1-.7295 1.21h0A.96451.96451 0 0 1 16 5h0A.99122.99122 0 0 1 15.03027 4.24023zM4 8A.99042.99042 0 0 1 3 7a.83154.83154 0 0 1 .08008-.37988A1.02883 1.02883 0 0 1 3.29 6.29 1.04669 1.04669 0 0 1 4.71 6.29a1.02883 1.02883 0 0 1 .21.33008A.99013.99013 0 0 1 4 8zM4 11a.99018.99018 0 0 1-.71-.29 1.16044 1.16044 0 0 1-.21-.33008.94107.94107 0 0 1 0-.75976A1.14718 1.14718 0 0 1 3.29 9.29 1.04667 1.04667 0 0 1 4.71 9.29a1.14718 1.14718 0 0 1 .21.33008.94107.94107 0 0 1 0 .75976 1.16044 1.16044 0 0 1-.21.33008A.99349.99349 0 0 1 4 11zM15 10a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 15 10zm-4 0a1.0032 1.0032 0 0 1 1-1h0a1.0032 1.0032 0 0 1 1 1h0a1.0032 1.0032 0 0 1-1 1h0A1.0032 1.0032 0 0 1 11 10zM7 10A1.0032 1.0032 0 0 1 8 9H8a1.0032 1.0032 0 0 1 1 1H9a1.0032 1.0032 0 0 1-1 1H8A1.0032 1.0032 0 0 1 7 10z">
