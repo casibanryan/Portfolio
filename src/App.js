@@ -2,6 +2,7 @@ import Navbar from './include/Navbar';
 import About from './include/About';
 import Experience from './include/Experience';
 import Education from './include/Education';
+import Skills from './include/Skills';
 import { Helmet } from 'react-helmet';
 import React from 'react';
 
