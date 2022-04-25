@@ -3,7 +3,6 @@ import About from './include/About';
 import Experience from './include/Experience';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-import { appendScript } from './js/appendScript';
 
 
 
@@ -14,7 +13,7 @@ function App() {
     window.addEventListener('DOMContentLoaded', event => {
       const sideNav = document.body.querySelector('#sideNav');
       if (sideNav) {
-        new bootstrap.ScrollSpy(document.body, {
+        new bootStrap.ScrollSpy(document.body, {
           target: '#sideNav',
           offset: 74,
         });
