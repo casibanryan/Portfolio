@@ -3,6 +3,7 @@ import About from './include/About';
 import Experience from './include/Experience';
 import Education from './include/Education';
 import Skills from './include/Skills';
+import Interest from './include/Interest';
 import { Helmet } from 'react-helmet';
 import React from 'react';
 
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Education />
       <Skills />
+      <Interest />
 
       <Helmet>
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
