@@ -15,8 +15,9 @@ const Navbar = () => (
                     className="navbar-toggler-icon"></span></button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
 
-                <Scrollspy className="scrollspy" items={['about', 'services', 'experience']} currentClassName="isCurrent" >
-                    <ul className="navbar-nav">
+
+                <ul className="navbar-nav">
+                    <Scrollspy className="scrollspy" items={['about', 'services', 'experience']} currentClassName="isCurrent" >
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#services">Services</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
@@ -24,9 +25,8 @@ const Navbar = () => (
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    </ul>
-                </Scrollspy>
-
+                    </Scrollspy>
+                </ul>
             </div>
         </nav>
     </>
