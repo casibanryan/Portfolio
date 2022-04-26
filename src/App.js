@@ -8,19 +8,21 @@ import Portfolio from './include/Portfolio';
 import Services from './include/Services';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-
+import Scrollspy from 'react-scrollspy'
 
 function App() {
 
-  // useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.src = "./js/scripts.js";
-  //   script.async = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+      Scrollspy(document.body, {
+        target: '#sideNav',
+        offset: 74,
+      });
+    };
+
+
+  }, [])
 
 
 
