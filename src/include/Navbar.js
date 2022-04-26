@@ -1,6 +1,6 @@
 import '../css/styles.css';
 import profile from '../assets/img/profile.png';
-
+import Scrollspy from 'react-scrollspy'
 
 const Navbar = () => (
     <>
@@ -14,15 +14,19 @@ const Navbar = () => (
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                     className="navbar-toggler-icon"></span></button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
-                <ul className="navbar-nav">
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                </ul>
+
+                <Scrollspy items={['about', 'services', 'experience']} currentClassName="is-current">
+                    <ul className="navbar-nav">
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </Scrollspy>
+
             </div>
         </nav>
     </>
