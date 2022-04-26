@@ -8,24 +8,22 @@ import Portfolio from './include/Portfolio';
 import Services from './include/Services';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-import Scrollspy from 'react-scrollspy'
 
 function App() {
 
   useEffect(() => {
-    const sideNav = document.body.querySelector('#sideNav');
-    if (sideNav) {
-      new Scrollspy.ScrollSpy(document.body, {
-        target: '#sideNav',
-        offset: 74,
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+          navbarToggler.click();
+        }
       });
-    };
-
-
+    });
   }, [])
-
-
-
 
   return (
     <div id="page-top" className="container-fluid p-0">
