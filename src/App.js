@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div id="page-top" className="container-fluid p-0">
-      <Navbar />
+
       <About />
       <Services />
       <Experience />
@@ -35,7 +35,7 @@ function App() {
       <Skills />
       <Interest />
       <Portfolio />
-
+      <Navbar />
       <Helmet>
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
