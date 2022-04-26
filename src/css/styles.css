@@ -85,8 +85,9 @@ body {
 }
 
 .isCurrent {
-  font-weight: bold;
-  color: green;
+  font-weight: bold !important;
+  color: green !important;
+  background-color: black !important;
 }
 
 hr {
