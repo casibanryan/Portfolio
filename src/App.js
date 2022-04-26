@@ -8,7 +8,7 @@ import Portfolio from './include/Portfolio';
 import Services from './include/Services';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
-
+import 'bootstrap/dist/bootstrap.min.css';
 
 
 function App() {
