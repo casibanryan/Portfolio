@@ -50,7 +50,7 @@ function App() {
 
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
-      new bootstrap.ScrollSpy(document.body, {
+      new bootStrap.ScrollSpy(document.body, {
         target: '#sideNav',
         offset: 74,
       });
