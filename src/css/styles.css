@@ -80,6 +80,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.scrollspy {
+  background-color: #515151;
+  margin: 10px;
+  position: fixed;
+  top: 0;
+  right: 0
+}
+
+.isCurrent {
+  font-weight: bold;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
