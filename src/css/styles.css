@@ -12365,6 +12365,7 @@ p.lead {
 
 .social-icons .social-icon:hover {
   background-color: #05FDD8;
+  color: black !important;
 }
 
 .dev-icons {
