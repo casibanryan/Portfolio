@@ -84,7 +84,7 @@ body {
 .isCurrent {
   font-weight: 900 !important;
   background-color: black !important;
-  color: rgb(8, 253, 216) !important;
+  text-align: underline;
   offset: 74;
 }
 

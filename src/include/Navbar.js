@@ -17,7 +17,7 @@ const Navbar = () => (
 
 
                 <ul className="navbar-nav">
-                    <Scrollspy className="scrollspy" items={['about', 'services', 'experience']} currentClassName="isCurrent" >
+                    <Scrollspy items={['about', 'services', 'experience', 'education', 'skills', 'interests', 'portfolio']} currentClassName="isCurrent" >
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#services">Services</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
