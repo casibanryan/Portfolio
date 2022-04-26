@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
-      Scrollspy(document.body, {
+      new bootstrap.ScrollSpy(document.body, {
         target: '#sideNav',
         offset: 74,
       });
