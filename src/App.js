@@ -46,7 +46,7 @@ function App() {
 
   // }, [])
 
-  window.addEventListener('DOMContentLoaded', event => {
+  window.addEventListener('DOMContentLoaded', (event) => {
 
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
