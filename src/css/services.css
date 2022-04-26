@@ -205,7 +205,7 @@
 
 .service-wrapper:hover .icon {
     background: #FD2155 !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .service-wrapper:hover .big-icon {
