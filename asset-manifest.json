@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.48fe5a85.css",
+    "main.js": "/Portfolio/static/js/main.dfb23886.js",
+    "static/media/lafang.png": "/Portfolio/static/media/lafang.9480b26b347789923642.png",
+    "static/media/art-management.png": "/Portfolio/static/media/art-management.2ffc79b643289f69f347.png",
+    "static/media/profile.png": "/Portfolio/static/media/profile.37ec1d0da9994c811494.png",
+    "static/media/bg.png": "/Portfolio/static/media/bg.09687493e7aabe39b6a6.png",
+    "static/media/online-voting.png": "/Portfolio/static/media/online-voting.f698b4f8a13a7d64492f.png",
+    "index.html": "/Portfolio/index.html",
+    "main.48fe5a85.css.map": "/Portfolio/static/css/main.48fe5a85.css.map",
+    "main.dfb23886.js.map": "/Portfolio/static/js/main.dfb23886.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48fe5a85.css",
+    "static/js/main.dfb23886.js"
+  ]
+}
