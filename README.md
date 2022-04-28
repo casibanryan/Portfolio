@@ -1,3 +1,2 @@
 # Portfolio
-heres -> the link to visit
-===== https://casibanryan.github.io/Portfolio/
+Deply ===== https://casibanryan.github.io/Portfolio/
