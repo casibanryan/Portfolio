@@ -1,44 +1,51 @@
 
-const About = () => (
-    <>
+const About = () => {
+    const firstName = "Resty";
+    const lastName = "Ochea";
+    const email = "restyochea@gmail.com";
+    const address = "6015 Lapu-lapu City· Cebu Philippines";
+    const mobileNumber = "09915466091"
+
+    const careerSummary = `I'm a Full Stack Developer with 4 years of professional and freelance experience. I specialize in building web and mobile applications using PHP, Laravel, Express, Vue, React, Quasar, and Ionic. My expertise includes MySQL, PostgreSQL, Redis, NoSQL databases, Docker, and API development.
+
+    I have hands-on experience integrating third-party services and APIs such as PayPal, Stripe, and social platforms, delivering secure and seamless user experiences.
+
+    I enjoy turning ideas into engaging, reliable platforms—whether for startups or established businesses. Let's build something great together!`
+
+
+    const socialLinks = [
+        { platform: "LinkedIn", url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile", iconClass: "fab fa-linkedin-in" },
+        { platform: "GitHub", url: "https://github.com/casibanryan", iconClass: "fab fa-github" },
+        { platform: "Twitter", url: "https://twitter.com/ochea_restituto", iconClass: "fab fa-twitter" },
+        { platform: "Facebook", url: "https://www.facebook.com/TitsuKe", iconClass: "fab fa-facebook-f" }
+    ];  
+    return (
+        <>
         <section className="resume-section" id="about">
             <div className="resume-section-content">
                 <h1 className="mb-0">
-                    Restituto
-                    <span className="text-primary">Ochea</span>
+                    {firstName}
+                    <span className="text-primary ms-3">{lastName}</span>
                 </h1>
                 <div className="subheading mb-5">
-                    6015 Basak street Lapu-lapu City· Cebu Philippines · (032) 887-5584 ·
-                    <a href="mailto:restyochea.com">restyochea@gmail.com</a>
+                    {address} · {mobileNumber} ·
+                    <a href="mailto:restyochea.com">{email}</a>
                 </div>
                 <p className="lead mb-5">
-                    I've been building websites and learning code for almost 5 years and am experienced in WordPress,
-                    HTML5, CSS3, PHP, Python3,
-                    JavaScript, JQuery, Bootstrap 5, React, and laravel. I work on a variety of
-                    projects of all sizes, and
-                    One of my specialties is taking an idea from scratch and creating a full-fledged
-                    platform. I go beyond to produce sites
-                    with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics,
-                    I'm able to optimize
-                    complex integrations to require little-to-no maintenance while running on their own for years.
-
-                    I am a programmer at heart and create features that are best suited for the job at hand.
-
+                   {careerSummary}
                 </p>
                 <div className="social-icons">
-                    <a className="social-icon" href="https://www.linkedin.com/in/restituto-ochea-a873b3236/"
-                        target="_blank"><i className="fab fa-linkedin-in"></i></a>
-                    <a className="social-icon" href="https://github.com/casibanryan" target="_blank"><i
-                        className="fab fa-github"></i></a>
-                    <a className="social-icon" href="https://twitter.com/ochea_restituto" target="_blank"><i
-                        className="fab fa-twitter"></i></a>
-                    <a className="social-icon" href="https://www.facebook.com/TitsuKe" target="_blank"><i
-                        className="fab fa-facebook-f"></i></a>
+                    {socialLinks.map(link => (
+                        <a key={link.platform} className="social-icon" href={link.url} target="_blank" rel="noreferrer">
+                            <i className={link.iconClass}></i>
+                        </a>
+                    ))}
                 </div>
             </div>
         </section>
         <hr className="m-0" />
     </>
-)
+    )
+}
 
 export default About;
