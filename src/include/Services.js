@@ -9,10 +9,10 @@ import SupportIcon from './icons/SupportIcon'
 const Services = () => {
   const serviceList = [
     {
-      title: 'Fully Responsive',
+      title: 'Cross Platform',
       description:
-        'Your website will look and perform flawlessly on any device. Impress your visitors and keep them engaged with a seamless experience everywhere.',
-      icon: <ResponsiveIcon />,
+        'Develop apps and websites for mobile, desktop, and tablets with a single codebase. Deliver seamless, responsive experiences everywhere and grow your audience with modern SPA solutions.',
+      icon: <FreshLayout />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
       backgroundIconClass: 'uim-svg'
@@ -20,8 +20,8 @@ const Services = () => {
     {
       title: 'Fresh Layouts',
       description:
-        'Stand out with modern, consistent layouts that reflect your brand. Every page is designed to captivate and convert your audience.',
-      icon: <FreshLayout />,
+        'Modern, responsive layouts that look great on every device and reflect your brand. Engage visitors and convert them into loyal clients with a professional design.',
+      icon: <ResponsiveIcon />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
       backgroundIconClass: 'uim-svg'
@@ -29,7 +29,7 @@ const Services = () => {
     {
       title: 'Search Engine Optimization',
       description:
-        'Get discovered online with proven SEO strategies that drive traffic and build trust. Let your business rise above the competition and attract more clients.',
+        'Boost your online presence and attract more clients with proven SEO strategies. Get found, build trust, and grow your business with expert optimization.',
       icon: <SeoIcon />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
@@ -38,7 +38,7 @@ const Services = () => {
     {
       title: 'Full Stack Development',
       description:
-        'From frontend to backend, I build secure, scalable web apps tailored to your goals. Launch your next big idea with expert full stack solutions.',
+        'Build robust, scalable web applications from frontend to backend using modern frameworks. Launch your next big idea with secure, high-performance solutions tailored to your needs.',
       icon: <WorkFlowIcon />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
@@ -47,7 +47,7 @@ const Services = () => {
     {
       title: 'Web Scrapping',
       description:
-        'Unlock valuable insights with custom web scraping for research, automation, and growth. Get accurate, actionable data delivered securely and on time.',
+        'Extract and organize valuable data from any website for research, automation, or business growth. Get reliable, custom web scraping solutions delivered securely and on time.',
       icon: <ScrapingIcon />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
@@ -56,7 +56,7 @@ const Services = () => {
     {
       title: 'Support 24/7',
       description:
-        "Are you looking for friendly code buddy?, if yes contact me I'm happy to serve you also helping other to solve with their bugs or problems is my name calling.",
+        'Get expert help and friendly support whenever you need it, day or night. I’m here to solve your problems and keep your projects running smoothly.',
       icon: <SupportIcon />,
       iconClass: 'header-uim-svg',
       parentIconClass: 'icon text-center text-primary h1 shadow rounded bg-services',
