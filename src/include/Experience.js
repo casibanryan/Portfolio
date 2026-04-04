@@ -1,35 +1,51 @@
-const Experience = () => (
+const Experience = () => {
+  const experienceList = [
+    {
+      title: 'Full Stack Developer',
+      company: 'Cubic Solutions',
+      description:
+        'Built and maintained custom web applications for logistics and business management. Worked closely with clients to deliver scalable, secure, and user-friendly solutions tailored to their needs.',
+      date: '2023 - Present'
+    },
+
+    {
+      title: 'Full Stack Developer',
+      company: 'Muramoto Philippines',
+      description:
+        'Developed internal web tools and automated business processes for manufacturing operations. Collaborated with cross-functional teams to deliver solutions that improved efficiency and reporting.',
+      date: '2022 - 2023'
+    },
+    {
+      title: 'Freelance Web Developer',
+      company: 'Online Platforms & Referrals',
+      description:
+        'Delivered high-quality websites and web apps to clients worldwide through online platforms, and personal referrals. Built a strong reputation for solving problems, collaborating remotely, and earning repeat business from satisfied clients.',
+      date: '2020 - 2022'
+    }
+  ]
+  return (
     <>
-        <section className="resume-section" id="experience">
-            <div className="resume-section-content">
-                <h2 className="mb-5">Experience</h2>
+      <section className="resume-section" id="experience">
+        <div className="resume-section-content">
+          <h2 className="mb-5">Experience</h2>
 
-                <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div className="flex-grow-1">
-                        <h3 className="mb-0">Freelancer</h3>
-                        <div className="subheading mb-3">Facebook</div>
-                        <p>Building website for low price but high quality.</p>
-                        <p>Helping other's with their error (QA)</p>
-
-                    </div>
-                    <div className="flex-shrink-0"><span className="text-primary">January 2021 - Present</span></div>
-                </div>
-
-                <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div className="flex-grow-1">
-                        <h3 className="mb-0">Associate Web Developer</h3>
-                        <div className="subheading mb-3">NeoDocto Inc.</div>
-                        <p>Created a program that has been used by the company for 6 months and building websites,
-                            After 1 month I was promoted as a group leader of web scrapping team python.</p>
-                        <p>Guiding other interns on how to web scrap data using python and how to automate websites.</p>
-                        <p>Customizing wordpress templates and updating website content.</p>
-                    </div>
-                    <div className="flex-shrink-0"><span className="text-primary">September 2021 - March 2022</span></div>
-                </div>
+          {experienceList.map((exp, idx) => (
+            <div key={idx} className="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div className="flex-grow-1">
+                <h3 className="mb-0">{exp.title}</h3>
+                <div className="subheading mb-3">{exp.company}</div>
+                <p>{exp.description}</p>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="text-primary">{exp.date}</span>
+              </div>
             </div>
-        </section>
-        <hr className="m-0" />
+          ))}
+        </div>
+      </section>
+      <hr className="m-0" />
     </>
-)
+  )
+}
 
-export default Experience;
+export default Experience

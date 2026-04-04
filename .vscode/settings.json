@@ -1,0 +1,23 @@
+{
+    "workbench.colorCustomizations": {},
+    "cSpell.words": [
+        "Basak",
+        "Bayan",
+        "bootdey",
+        "lafang",
+        "Lafang",
+        "lapu",
+        "Lapu",
+        "laravel",
+        "Managemnt",
+        "Muramoto",
+        "noreferrer",
+        "Restituto",
+        "restyochea",
+        "Xampp"
+    ],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "prettier.tabWidth": 2
+}
