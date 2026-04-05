@@ -1,5 +1,5 @@
 import '../css/styles.css'
-import profile from '../assets/img/profile.png'
+import profile from '../assets/img/profile2.png'
 import Scrollspy from 'react-scrollspy'
 
 const Navbar = () => {
