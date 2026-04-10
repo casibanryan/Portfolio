@@ -5,7 +5,7 @@ const Experience = () => {
       company: 'Cubic Solutions',
       description:
         'Built and maintained custom web applications for logistics and business management. Worked closely with clients to deliver scalable, secure, and user-friendly solutions tailored to their needs.',
-      date: '2023 - Present'
+      date: '2023 - 2026'
     },
 
     {
