@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# casibanryan — Full‑Stack Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello! I'm Ryan (casibanryan) — a Full‑Stack Developer who designs and builds responsive, accessible, and maintainable web experiences. This repository holds the source for my personal portfolio site: a project showcase, case studies, and contact information that demonstrate my approach to front-end design and full‑stack engineering.
 
-## Available Scripts
+## About this project
 
-In the project directory, you can run:
+This site was initially created with Create React App and emphasizes modern front‑end development with a strong focus on CSS for design and layout (this repo is primarily CSS-heavy). It showcases projects I've built, the technologies I use, and the problems I solve.
 
-### `npm start`
+Why this repo:
+- It demonstrates component-driven UI and clear separation of concerns between HTML, CSS, and JavaScript.
+- It highlights my design and UX decisions through project pages, screenshots, and live links.
+- It serves as a living resume for hiring managers and collaborators.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What you'll find here
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Project showcase pages with descriptions, tech used, and links to live demos and source repos.
+- A responsive, mobile‑first layout with keyboard-friendly navigation and accessibility considerations.
+- Lightweight, performance-minded CSS and minimal JS for progressive enhancement.
 
-### `npm test`
+## Tech stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Framework: Create React App (React)
+- Languages: CSS (primary), JavaScript, HTML
+- Deployment: GitHub Pages or any static hosting platform
 
-### `npm run build`
+Note: This repository is CSS-focused (most of the repository is styles) with JavaScript used for interactivity and React components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   git clone https://github.com/casibanryan/Portfolio.git
+   cd Portfolio
 
-### `npm run eject`
+2. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run locally in development mode:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The site will be available at http://localhost:3000 and will auto-reload when you make changes.
 
-## Learn More
+4. Build for production:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   The build output will be in the `build/` folder and is ready to deploy to static hosts.
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub Pages: enable Pages in repository settings or use a GitHub Actions workflow to deploy the `build/` folder.
+- Alternatives: Vercel, Netlify, or any static site hosting provider that accepts a build folder.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome — this repo is intended to be a living portfolio. If you want to suggest changes or improvements:
 
-### Making a Progressive Web App
+1. Open an issue describing the change.
+2. Fork the repo and create a branch for your work.
+3. Create a pull request with a clear description of your changes and why.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you want to suggest new projects or case studies, include screenshots and a short writeup of goals and technical challenges.
 
-### Advanced Configuration
+## Personal notes / Customization tips
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Add or update project entries in the `projects/` or `src` pages with your role, responsibilities, tech used, and outcomes.
+- Include screenshots (optimized for web) in `public` or `src/assets` and reference them in each project page.
+- If you integrate a backend or serverless functions, add run/deploy instructions and environment variable notes here.
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- GitHub: https://github.com/casibanryan
+- Email: (add an email here if you want it public)
+- LinkedIn / Twitter: add links if you'd like them displayed
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License: MIT
