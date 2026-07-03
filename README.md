@@ -1,4 +1,4 @@
-# casibanryan — Full‑Stack Developer Portfolio
+# Resty Ochea — Full‑Stack Developer Portfolio
 
 Hello! I'm Ryan (casibanryan) — a Full‑Stack Developer who designs and builds responsive, accessible, and maintainable web experiences. This repository holds the source for my personal portfolio site: a project showcase, case studies, and contact information that demonstrate my approach to front-end design and full‑stack engineering.
 
@@ -25,34 +25,6 @@ Why this repo:
 
 Note: This repository is CSS-focused (most of the repository is styles) with JavaScript used for interactivity and React components.
 
-## Run locally
-
-1. Clone the repo:
-
-   git clone https://github.com/casibanryan/Portfolio.git
-   cd Portfolio
-
-2. Install dependencies:
-
-   npm install
-
-3. Run locally in development mode:
-
-   npm start
-
-   The site will be available at http://localhost:3000 and will auto-reload when you make changes.
-
-4. Build for production:
-
-   npm run build
-
-   The build output will be in the `build/` folder and is ready to deploy to static hosts.
-
-## Deployment
-
-- GitHub Pages: enable Pages in repository settings or use a GitHub Actions workflow to deploy the `build/` folder.
-- Alternatives: Vercel, Netlify, or any static site hosting provider that accepts a build folder.
-
 ## Contributing
 
 Contributions are welcome — this repo is intended to be a living portfolio. If you want to suggest changes or improvements:
@@ -63,18 +35,11 @@ Contributions are welcome — this repo is intended to be a living portfolio. If
 
 If you want to suggest new projects or case studies, include screenshots and a short writeup of goals and technical challenges.
 
-## Personal notes / Customization tips
-
-- Add or update project entries in the `projects/` or `src` pages with your role, responsibilities, tech used, and outcomes.
-- Include screenshots (optimized for web) in `public` or `src/assets` and reference them in each project page.
-- If you integrate a backend or serverless functions, add run/deploy instructions and environment variable notes here.
 
 ## Contact
 
 - GitHub: https://github.com/casibanryan
-- Email: (add an email here if you want it public)
-- LinkedIn / Twitter: add links if you'd like them displayed
+- Email: restyochea@gmail.com
+- LinkedIn: https://www.linkedin.com/in/resty-ochea-a873b3236?originalSubdomain=ph
 
----
 
-License: MIT
