@@ -61,20 +61,41 @@ const Portfolio = () => {
 
   const closeModal = () => setActiveProject(null)
 
+  const getGallerySlideSize = () => {
+    if (!galleryRef.current || !galleryRef.current.firstElementChild) return 0
+    const slideRect = galleryRef.current.firstElementChild.getBoundingClientRect()
+    const style = window.getComputedStyle(galleryRef.current)
+    const gap = parseFloat(style.gap || style.columnGap || '0') || 0
+    return slideRect.width + gap
+  }
+
   const scrollGalleryTo = index => {
     if (!galleryRef.current) return
+    const slideSize = getGallerySlideSize()
+    if (!slideSize) return
+
     galleryRef.current.scrollTo({
-      left: galleryRef.current.offsetWidth * index,
+      left: slideSize * index,
       behavior: 'smooth'
     })
   }
 
   const handleGalleryScroll = () => {
-    if (!galleryRef.current) return
-    const { scrollLeft, offsetWidth } = galleryRef.current
-    const newIndex = Math.round(scrollLeft / offsetWidth)
-    if (newIndex !== galleryIndex) {
-      setGalleryIndex(newIndex)
+    if (!galleryRef.current || !activeProject) return
+    const slideSize = getGallerySlideSize()
+    if (!slideSize) return
+
+    const { scrollLeft, scrollWidth, offsetWidth } = galleryRef.current
+    const projectCount = activeProject.gallery.length
+
+    let newIndex = Math.round(scrollLeft / slideSize)
+    if (scrollLeft + offsetWidth >= scrollWidth - 2) {
+      newIndex = projectCount - 1
+    }
+
+    const clampedIndex = Math.min(Math.max(newIndex, 0), projectCount - 1)
+    if (clampedIndex !== galleryIndex) {
+      setGalleryIndex(clampedIndex)
     }
   }
 
@@ -162,14 +183,14 @@ const Portfolio = () => {
                 <h3>{activeProject.title}</h3>
                 <p>{activeProject.subtitle}</p>
               </div>
-              <a
+              {/* <a
                 href={activeProject.github}
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-light project-modal-code-btn"
               >
-                View code
-              </a>
+                Live preview
+              </a> */}
             </div>
             <div className="project-modal-body">
               <div className="project-modal-section">
