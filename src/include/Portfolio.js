@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import artManagemnt from '../assets/img/art-management.png'
 import lafang from '../assets/img/lafang.png'
 import onlineVoting from '../assets/img/online-voting.png'
+import comingSoonBanner from '../assets/img/coming-soon-banner.png'
 
 const projectData = [
   {
@@ -13,7 +14,7 @@ const projectData = [
     github: 'https://github.com/casibanryan/Living-Art',
     features: ['Customer login', 'Admin login', 'Payment processing', 'CRUD inventory', 'Contact messaging'],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [artManagemnt, onlineVoting, lafang],
+    gallery: [artManagemnt, comingSoonBanner, comingSoonBanner],
     videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
   },
   {
@@ -25,7 +26,7 @@ const projectData = [
     github: 'https://github.com/casibanryan/voting-system',
     features: ['Student login', 'Admin login', 'Vote casting', 'Election management', 'Contact form'],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [onlineVoting, artManagemnt, lafang],
+    gallery: [onlineVoting, comingSoonBanner, comingSoonBanner],
     videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
   },
   {
@@ -43,16 +44,46 @@ const projectData = [
       'Customer contact'
     ],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [lafang, artManagemnt, onlineVoting, onlineVoting],
+    gallery: [lafang, comingSoonBanner, comingSoonBanner],
     videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
   }
 ]
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null)
+  const [galleryIndex, setGalleryIndex] = useState(0)
+  const galleryRef = useRef(null)
 
-  const openModal = project => setActiveProject(project)
+  const openModal = project => {
+    setActiveProject(project)
+    setGalleryIndex(0)
+  }
+
   const closeModal = () => setActiveProject(null)
+
+  const scrollGalleryTo = index => {
+    if (!galleryRef.current) return
+    galleryRef.current.scrollTo({
+      left: galleryRef.current.offsetWidth * index,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleGalleryScroll = () => {
+    if (!galleryRef.current) return
+    const { scrollLeft, offsetWidth } = galleryRef.current
+    const newIndex = Math.round(scrollLeft / offsetWidth)
+    if (newIndex !== galleryIndex) {
+      setGalleryIndex(newIndex)
+    }
+  }
+
+  useEffect(() => {
+    if (activeProject && galleryRef.current) {
+      galleryRef.current.scrollTo({ left: 0 })
+      setGalleryIndex(0)
+    }
+  }, [activeProject])
 
   return (
     <>
@@ -151,12 +182,25 @@ const Portfolio = () => {
               </div>
               <div className="project-modal-section">
                 <h4>Gallery</h4>
-                <div className="project-gallery">
-                  {activeProject.gallery.map((src, index) => (
-                    <div className="project-gallery-item" key={index}>
-                      <img src={src} alt={`${activeProject.title} screenshot ${index + 1}`} />
-                    </div>
-                  ))}
+                <div className="project-gallery-slider-wrapper">
+                  <div className="project-gallery-slider" ref={galleryRef} onScroll={handleGalleryScroll}>
+                    {activeProject.gallery.map((src, index) => (
+                      <div className="project-gallery-slide" key={index}>
+                        <img src={src} alt={`${activeProject.title} screenshot ${index + 1}`} />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="project-gallery-dots">
+                    {activeProject.gallery.map((_, index) => (
+                      <button
+                        key={index}
+                        type="button"
+                        className={`project-gallery-dot ${galleryIndex === index ? 'active' : ''}`}
+                        onClick={() => scrollGalleryTo(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
               <div className="project-modal-section project-video-section">
