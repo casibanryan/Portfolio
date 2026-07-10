@@ -12456,6 +12456,20 @@ p.lead {
   }
 }
 
+@media (min-width: 300px) and (max-width: 991px) {
+  #sideNav .navbar-toggler {
+    font-size: 1rem;
+    padding: 0.15rem 0.6rem;
+  }
+  #sideNav .navbar-collapse {
+    margin-left: 1rem;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding-left: 5px;
+  }
+}
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
