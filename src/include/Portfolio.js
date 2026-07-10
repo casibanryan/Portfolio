@@ -15,7 +15,7 @@ const projectData = [
     features: ['Customer login', 'Admin login', 'Payment processing', 'CRUD inventory', 'Contact messaging'],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
     gallery: [artManagemnt, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
+    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projectData = [
     features: ['Student login', 'Admin login', 'Vote casting', 'Election management', 'Contact form'],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
     gallery: [onlineVoting, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
+    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const projectData = [
     ],
     tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
     gallery: [lafang, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/ysz5S6PUM-U'
+    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
   }
 ]
 
