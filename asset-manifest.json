@@ -1,19 +1,37 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.46555ebc.css",
-    "main.js": "/Portfolio/static/js/main.39305207.js",
+    "main.css": "/Portfolio/static/css/main.1cce8981.css",
+    "main.js": "/Portfolio/static/js/main.05ff7ad2.js",
+    "static/media/landing.png": "/Portfolio/static/media/landing.7f0ebc47781bf94d4aaf.png",
+    "static/media/contact_us.png": "/Portfolio/static/media/contact_us.538577a9a237fa0e7820.png",
     "static/media/profile2.png": "/Portfolio/static/media/profile2.6203c560ceab524c66fd.png",
+    "static/media/highlight.png": "/Portfolio/static/media/highlight.7f771db5d96764380b68.png",
+    "static/media/client_doctors_page.png": "/Portfolio/static/media/client_doctors_page.cb5f475452eb4fad44a2.png",
+    "static/media/all_doctors.png": "/Portfolio/static/media/all_doctors.38b76fcc8dbb9e593094.png",
+    "static/media/add_doctor.png": "/Portfolio/static/media/add_doctor.3cf6fa9bef709fe334f3.png",
+    "static/media/profile_settings.png": "/Portfolio/static/media/profile_settings.fb8de51fbafa865db8d7.png",
+    "static/media/dashboard.png": "/Portfolio/static/media/dashboard.ca4ca1cbb0410e669862.png",
+    "static/media/services.png": "/Portfolio/static/media/services.4bc912c1c1e3559521ae.png",
+    "static/media/add_client.png": "/Portfolio/static/media/add_client.72ad17a15f3376c98116.png",
+    "static/media/new_service.png": "/Portfolio/static/media/new_service.9954d6c1b1cabdf00f6d.png",
+    "static/media/add_health_records.png": "/Portfolio/static/media/add_health_records.a6e3e862c7adb5695763.png",
+    "static/media/appointment_list.png": "/Portfolio/static/media/appointment_list.c518315e9df28efd6e55.png",
+    "static/media/create_invoice.png": "/Portfolio/static/media/create_invoice.01bd30e43744cca56311.png",
     "static/media/lafang.png": "/Portfolio/static/media/lafang.9480b26b347789923642.png",
+    "static/media/all_clients.png": "/Portfolio/static/media/all_clients.7a559f724814ff6d2a8d.png",
+    "static/media/invoice_list.png": "/Portfolio/static/media/invoice_list.c418f14ae0f4ac5be3e6.png",
+    "static/media/book_appointment.png": "/Portfolio/static/media/book_appointment.0b7f24e250da8a84a462.png",
     "static/media/coming-soon-banner.png": "/Portfolio/static/media/coming-soon-banner.b8a3c367dd6fb94d9046.png",
+    "static/media/email.png": "/Portfolio/static/media/email.6e59afbf36aec70bd3eb.png",
     "static/media/art-management.png": "/Portfolio/static/media/art-management.2ffc79b643289f69f347.png",
     "static/media/bg.png": "/Portfolio/static/media/bg.09687493e7aabe39b6a6.png",
     "static/media/online-voting.png": "/Portfolio/static/media/online-voting.f698b4f8a13a7d64492f.png",
     "index.html": "/Portfolio/index.html",
-    "main.46555ebc.css.map": "/Portfolio/static/css/main.46555ebc.css.map",
-    "main.39305207.js.map": "/Portfolio/static/js/main.39305207.js.map"
+    "main.1cce8981.css.map": "/Portfolio/static/css/main.1cce8981.css.map",
+    "main.05ff7ad2.js.map": "/Portfolio/static/js/main.05ff7ad2.js.map"
   },
   "entrypoints": [
-    "static/css/main.46555ebc.css",
-    "static/js/main.39305207.js"
+    "static/css/main.1cce8981.css",
+    "static/js/main.05ff7ad2.js"
   ]
 }
