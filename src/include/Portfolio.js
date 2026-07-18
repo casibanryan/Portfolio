@@ -1,65 +1,31 @@
 import { useEffect, useRef, useState } from 'react'
-import artManagemnt from '../assets/img/art-management.png'
-import lafang from '../assets/img/lafang.png'
-import onlineVoting from '../assets/img/online-voting.png'
-import comingSoonBanner from '../assets/img/coming-soon-banner.png'
-
-const projectData = [
-  {
-    id: 1,
-    title: 'Living Art',
-    subtitle: 'Art Management System',
-    description:
-      'Living Art is a management system for online art galleries that allows buyers to purchase paintings, scriptures, and other artwork online using PHP.',
-    github: 'https://github.com/casibanryan/Living-Art',
-    features: ['Customer login', 'Admin login', 'Payment processing', 'CRUD inventory', 'Contact messaging'],
-    tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [artManagemnt, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
-  },
-  {
-    id: 2,
-    title: 'C P C',
-    subtitle: 'Online Voting System',
-    description:
-      'A secure voting platform built to help schools conduct elections online with separate student and admin flows, vote tracking, and results management.',
-    github: 'https://github.com/casibanryan/voting-system',
-    features: ['Student login', 'Admin login', 'Vote casting', 'Election management', 'Contact form'],
-    tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [onlineVoting, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
-  },
-  {
-    id: 3,
-    title: 'Lafang',
-    subtitle: 'Restaurant Online Reservation',
-    description:
-      'Lafang helps restaurant staff manage reservations and guest details in one place, improving responsiveness and keeping reservation data centralized.',
-    github: 'https://github.com/casibanryan/voting-system',
-    features: [
-      'Reservation request',
-      'Admin dashboard',
-      'Automated email notifications',
-      'CRUD bookings',
-      'Customer contact'
-    ],
-    tools: ['PHP', 'Bootstrap', 'Axios', 'jQuery', 'HTML/CSS/JS', 'MySQL', 'XAMPP'],
-    gallery: [lafang, comingSoonBanner, comingSoonBanner],
-    videoUrl: 'https://www.youtube.com/embed/Hfm94aHAbYQ?si=6Z7UHCJZU37PpSvt'
-  }
-]
+import projectData from '../helper/projectData'
+import '../css/zoom-modal.css'
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null)
   const [galleryIndex, setGalleryIndex] = useState(0)
+  const [zoomImage, setZoomImage] = useState(null)
   const galleryRef = useRef(null)
 
   const openModal = project => {
     setActiveProject(project)
     setGalleryIndex(0)
+    setZoomImage(null)
   }
 
-  const closeModal = () => setActiveProject(null)
+  const closeModal = () => {
+    setActiveProject(null)
+    setZoomImage(null)
+  }
+
+  const openZoom = src => {
+    setZoomImage(src)
+  }
+
+  const closeZoom = () => {
+    setZoomImage(null)
+  }
 
   const getGallerySlideSize = () => {
     if (!galleryRef.current || !galleryRef.current.firstElementChild) return 0
@@ -106,6 +72,25 @@ const Portfolio = () => {
     }
   }, [activeProject])
 
+  // Handle ESC key: close zoom first, then gallery
+  useEffect(() => {
+    const handleKeyDown = e => {
+      if (e.key === 'Escape') {
+        if (zoomImage) {
+          e.stopPropagation()
+          closeZoom()
+        } else if (activeProject) {
+          closeModal()
+        }
+      }
+    }
+
+    if (activeProject) {
+      document.addEventListener('keydown', handleKeyDown)
+      return () => document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [activeProject, zoomImage])
+
   return (
     <>
       <section className="resume-section" id="portfolio">
@@ -122,11 +107,15 @@ const Portfolio = () => {
                           <i className="fa-solid fa-arrow-right"></i> Read more
                         </button>
                       </div>
-                      <img className="port-image" src={project.gallery[0]} alt={project.title} />
+                      <img className="port-image" src={project.highLight || project.gallery[0]} alt={project.title} />
                     </div>
                     <div className="col-sm-8 col-md-9 col-lg-9">
                       <h3>
-                        <a href={project.github} target="_blank" rel="noreferrer">
+                        <a
+                          href={project.github ? project.github : '#None'}
+                          target={project.github ? '_blank' : undefined}
+                          rel="noreferrer"
+                        >
                           {project.title}
                         </a>
                       </h3>
@@ -147,7 +136,7 @@ const Portfolio = () => {
                           <span className="text-primary">Tools</span>
                           {project.tools.map((tool, index) => (
                             <p className="mb-0" key={index}>
-                              {tool}
+                              • {tool}
                             </p>
                           ))}
                         </div>
@@ -161,12 +150,17 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Project Modal (Gallery) */}
       {activeProject && (
         <div
-          className="project-modal open"
+          className={`project-modal open ${zoomImage ? 'project-modal-blurred' : ''}`}
           role="dialog"
           aria-modal="true"
-          onClick={event => event.target.classList.contains('project-modal') && closeModal()}
+          onClick={event => {
+            if (!zoomImage && event.target.classList.contains('project-modal')) {
+              closeModal()
+            }
+          }}
         >
           <div className="project-modal-content">
             <button
@@ -183,31 +177,25 @@ const Portfolio = () => {
                 <h3>{activeProject.title}</h3>
                 <p>{activeProject.subtitle}</p>
               </div>
-              {/* <a
-                href={activeProject.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-light project-modal-code-btn"
-              >
-                Live preview
-              </a> */}
             </div>
             <div className="project-modal-body">
               <div className="project-modal-section">
                 <h4>Features</h4>
-                <ul className="project-feature-list">
+                <div className="row">
                   {activeProject.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <div className="col-6" key={index}>
+                      • {feature}
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
               <div className="project-modal-section">
                 <h4>Gallery</h4>
                 <div className="project-gallery-slider-wrapper">
                   <div className="project-gallery-slider" ref={galleryRef} onScroll={handleGalleryScroll}>
                     {activeProject.gallery.map((src, index) => (
-                      <div className="project-gallery-slide" key={index}>
-                        <img src={src} alt={`${activeProject.title} screenshot ${index + 1}`} />
+                      <div className="project-gallery-slide" key={index} onClick={() => openZoom(src)}>
+                        <img src={src} alt={`${activeProject.title} screenshot ${index + 1}`} loading="lazy" />
                       </div>
                     ))}
                   </div>
@@ -237,6 +225,19 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Zoom Modal (Overlay on top of Gallery) */}
+      {zoomImage && (
+        <div className="zoom-modal" onClick={closeZoom}>
+          <div className="zoom-modal-backdrop" />
+          <div className="zoom-modal-content" onClick={e => e.stopPropagation()}>
+            <button className="zoom-modal-close" type="button" onClick={closeZoom} aria-label="Close zoom">
+              ✕
+            </button>
+            <img className="zoom-modal-image" src={zoomImage} alt="Zoomed view" />
           </div>
         </div>
       )}
