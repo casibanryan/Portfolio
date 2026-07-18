@@ -6,7 +6,7 @@ const About = () => {
   const mobileNumber = '09915466091'
   const numExperience = 5
 
-  const careerSummary = `I'm a Full Stack Developer dedicated to building high-performance web and mobile solutions. Over the past ${numExperience} years, I’ve specialized in developing secure APIs, managing diverse database architectures, and turning startup ideas into reliable platforms. I believe in functional design, efficient code, and seamless user journeys.`
+  const careerSummary = `I turn business ideas into live, scalable platforms and I've done it for ${numExperience} years across startups and established teams. Full-stack, no handoff headaches, no gaps between design and code. Just clean systems built to grow.`
 
   const socialLinks = [
     {
