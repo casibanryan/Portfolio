@@ -1,17 +1,31 @@
 import { useEffect, useRef, useState } from 'react'
 import projectData from '../helper/projectData'
+import '../css/zoom-modal.css'
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null)
   const [galleryIndex, setGalleryIndex] = useState(0)
+  const [zoomImage, setZoomImage] = useState(null)
   const galleryRef = useRef(null)
 
   const openModal = project => {
     setActiveProject(project)
     setGalleryIndex(0)
+    setZoomImage(null)
   }
 
-  const closeModal = () => setActiveProject(null)
+  const closeModal = () => {
+    setActiveProject(null)
+    setZoomImage(null)
+  }
+
+  const openZoom = src => {
+    setZoomImage(src)
+  }
+
+  const closeZoom = () => {
+    setZoomImage(null)
+  }
 
   const getGallerySlideSize = () => {
     if (!galleryRef.current || !galleryRef.current.firstElementChild) return 0
@@ -57,6 +71,25 @@ const Portfolio = () => {
       setGalleryIndex(0)
     }
   }, [activeProject])
+
+  // Handle ESC key: close zoom first, then gallery
+  useEffect(() => {
+    const handleKeyDown = e => {
+      if (e.key === 'Escape') {
+        if (zoomImage) {
+          e.stopPropagation()
+          closeZoom()
+        } else if (activeProject) {
+          closeModal()
+        }
+      }
+    }
+
+    if (activeProject) {
+      document.addEventListener('keydown', handleKeyDown)
+      return () => document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [activeProject, zoomImage])
 
   return (
     <>
@@ -117,12 +150,17 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Project Modal (Gallery) */}
       {activeProject && (
         <div
-          className="project-modal open"
+          className={`project-modal open ${zoomImage ? 'project-modal-blurred' : ''}`}
           role="dialog"
           aria-modal="true"
-          onClick={event => event.target.classList.contains('project-modal') && closeModal()}
+          onClick={event => {
+            if (!zoomImage && event.target.classList.contains('project-modal')) {
+              closeModal()
+            }
+          }}
         >
           <div className="project-modal-content">
             <button
@@ -139,20 +177,11 @@ const Portfolio = () => {
                 <h3>{activeProject.title}</h3>
                 <p>{activeProject.subtitle}</p>
               </div>
-              {/* <a
-                href={activeProject.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-light project-modal-code-btn"
-              >
-                Live preview
-              </a> */}
             </div>
             <div className="project-modal-body">
               <div className="project-modal-section">
                 <h4>Features</h4>
-
-                <div class="row">
+                <div className="row">
                   {activeProject.features.map((feature, index) => (
                     <div className="col-6" key={index}>
                       • {feature}
@@ -165,7 +194,7 @@ const Portfolio = () => {
                 <div className="project-gallery-slider-wrapper">
                   <div className="project-gallery-slider" ref={galleryRef} onScroll={handleGalleryScroll}>
                     {activeProject.gallery.map((src, index) => (
-                      <div className="project-gallery-slide" key={index}>
+                      <div className="project-gallery-slide" key={index} onClick={() => openZoom(src)}>
                         <img src={src} alt={`${activeProject.title} screenshot ${index + 1}`} loading="lazy" />
                       </div>
                     ))}
@@ -196,6 +225,19 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Zoom Modal (Overlay on top of Gallery) */}
+      {zoomImage && (
+        <div className="zoom-modal" onClick={closeZoom}>
+          <div className="zoom-modal-backdrop" />
+          <div className="zoom-modal-content" onClick={e => e.stopPropagation()}>
+            <button className="zoom-modal-close" type="button" onClick={closeZoom} aria-label="Close zoom">
+              ✕
+            </button>
+            <img className="zoom-modal-image" src={zoomImage} alt="Zoomed view" />
           </div>
         </div>
       )}
