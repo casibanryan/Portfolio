@@ -7,6 +7,7 @@ Hello! I'm Ryan (casibanryan) — a Full‑Stack Developer who designs and build
 This site was initially created with Create React App and emphasizes modern front‑end development with a strong focus on CSS for design and layout (this repo is primarily CSS-heavy). It showcases projects I've built, the technologies I use, and the problems I solve.
 
 Why this repo:
+
 - It demonstrates component-driven UI and clear separation of concerns between HTML, CSS, and JavaScript.
 - It highlights my design and UX decisions through project pages, screenshots, and live links.
 - It serves as a living resume for hiring managers and collaborators.
@@ -19,9 +20,7 @@ Why this repo:
 
 ## Tech stack
 
-- Framework: Create React App (React)
-- Languages: CSS (primary), JavaScript, HTML
-- Deployment: GitHub Pages or any static hosting platform
+- Framework: React + Bootstrap
 
 Note: This repository is CSS-focused (most of the repository is styles) with JavaScript used for interactivity and React components.
 
@@ -35,11 +34,8 @@ Contributions are welcome — this repo is intended to be a living portfolio. If
 
 If you want to suggest new projects or case studies, include screenshots and a short writeup of goals and technical challenges.
 
-
 ## Contact
 
 - GitHub: https://github.com/casibanryan
 - Email: restyochea@gmail.com
 - LinkedIn: https://www.linkedin.com/in/resty-ochea-a873b3236?originalSubdomain=ph
-
-
